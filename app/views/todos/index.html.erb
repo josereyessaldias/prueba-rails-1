@@ -8,8 +8,8 @@
 <% @todos.each do |todo| %>
 	<div class="card">
 
-		<div class="col-6">Descripción: <%= todo.description %></div>
-		<div class="col-6">Completed: <%= todo.completed %></div>
+		<div class="col-8">Descripción: <%= todo.description%> <%= link_to "Ver ToDo", todo, :class => "btn btn-light ml-3" %></div>
+		<div class="col-8">Completed: <%= todo.completed %></div>
 	
 	</div>
 <% end %>
