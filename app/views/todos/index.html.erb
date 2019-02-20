@@ -1,0 +1,14 @@
+
+<div class="container">
+<h1>ToDo Index</h1>
+
+
+<% @todos.each do |todo| %>
+	<div class="card">
+
+		<div class="col-6">Descripción: <%= todo.description %></div>
+		<div class="col-6">Completed: <%= todo.completed %></div>
+	
+	</div>
+<% end %>
+</div>
