@@ -1,4 +1,4 @@
-
+<br><br><br>
 <div class="container">
 <h1>ToDo Index</h1><br>
 
@@ -8,7 +8,7 @@
 <% @todos.each do |todo| %>
 	<div class="card">
 
-		<div class="col-10">Descripción: <%= todo.description%> <%= link_to "Ver ToDo", todo, :class => "btn btn-light ml-3" %>
+		<div class="col-12">Descripción: <%= todo.description%> <%= link_to "Ver ToDo", todo, :class => "btn btn-light ml-3" %>
 			<%= link_to "Editar ToDo", edit_todo_path(todo), :class => "btn btn-info ml-3" %>
 			<%= link_to "Borrar ToDo", todo, method: :delete, :class => "btn btn-dark ml-3" %>
 			<%= link_to "Marcar Completed", complete_todo_path(todo), :class => "btn btn-dark ml-3" %>
